@@ -1,6 +1,6 @@
 -- Configuração do GIT
-git config --global user.name Dezinn1711
-git config --global user.email andreluizrosa4@gmail.com
+git config --global user.name LuksCod
+git config --global user.email lucas.mtheodosio@gmail.com
 
 
 1. Executar diretamente na pasta do repositório o comando:
