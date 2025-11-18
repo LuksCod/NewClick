@@ -29,4 +29,3 @@ public class UserContextService
         return new ClaimsPrincipal(identity);
     }
 }
-

@@ -17,4 +17,5 @@ namespace NewClick.API.Models;
 
     [StringLength(26)]
     public string Cor { get; set; } = "rgba(0,0,0,1)";
+    public int Id { get; internal set; }
 }

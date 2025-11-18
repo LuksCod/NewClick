@@ -13,3 +13,4 @@ public class AuthResponseDto
     [JsonPropertyName("user")]
     public UserDto User { get; set; } = null!;
 }
+

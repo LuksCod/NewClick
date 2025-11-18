@@ -39,4 +39,5 @@ public class Produto
 
     [StringLength(300)]
     public string Foto { get; set; }
+    public int CategoriaId { get; internal set; }
 }
