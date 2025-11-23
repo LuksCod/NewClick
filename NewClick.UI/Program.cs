@@ -1,3 +1,4 @@
+using NewClick.UI;
 using NewClick.UI.Middleware;
 using NewClick.UI.Models;
 using NewClick.UI.Services.Implementations;
@@ -48,8 +49,15 @@ builder.Services.AddAuthorization(options =>
 
 builder.Services.AddHttpContextAccessor();
 
+// AutoMapper
+builder.Services.AddAutoMapper(typeof(MappingConfig));
+
 // Serviços de API
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<ICategoriaService, CategoriaService>();
+builder.Services.AddScoped<IProdutoService, ProdutoService>();
+builder.Services.AddScoped<ILojaService, LojaService>();
+
 
 var app = builder.Build();
 
