@@ -9,6 +9,7 @@ public class Produto
     public int Id { get; set; }
 
     [ForeignKey("CategoriaId")]
+    public int CategoriaId { get; set; }
     public Categoria Categoria { get; set; }
 
     [StringLength(100)]
@@ -39,5 +40,4 @@ public class Produto
 
     [StringLength(300)]
     public string Foto { get; set; }
-    public int CategoriaId { get; internal set; }
 }
